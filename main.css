@@ -1,0 +1,44 @@
+
+
+:root{/*padroes fixos*/
+    --cor1: #68A67E;
+    --cor2:#F29544;
+    --cor3:#D96725;
+    --cor4:#400D01;
+    --cor5:#0D0D0D;
+    --cor5:#F2EBDC;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    margin: auto;
+
+    background-color:#f2954461;
+
+    background-image: url(imagens/escondidinho.webp);
+    background-repeat: no-repeat;/* faz com que a imagem nao se reppita */
+    background-position: center center;    /*  aposiçao da imagem é centro no cento */
+
+    background-attachment: fixed;/* qaudndo rolar a pagina a imagem fica fixa */
+
+    background-size: contain; /* especifica o tamanho da imagem */
+
+
+    
+}
+
+p{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+    background-color: #0d0d0d7d;
+    border: 10px;
+    padding: 100px;
+}
