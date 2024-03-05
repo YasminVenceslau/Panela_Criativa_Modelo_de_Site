@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: "cookie" ;
+    src: url(fontes/Cookiss.otf);
+}
 
 :root{/*padroes fixos*/
     --cor1: #68A67E;
@@ -11,7 +14,7 @@
 }
 
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 
@@ -21,24 +24,283 @@ body{
 
     background-color:#f2954461;
 
-    background-image: url(imagens/escondidinho.webp);
-    background-repeat: no-repeat;/* faz com que a imagem nao se reppita */
-    background-position: center center;    /*  aposiçao da imagem é centro no cento */
+    background-image: url(imagens/fundodes.avif);
+    
+    
+    /* faz com que a imagem nao se reppita */
+     background-position: center center;    /*  aposiçao da imagem é centro no cento */
 
-    background-attachment: fixed;/* qaudndo rolar a pagina a imagem fica fixa */
+    background-size: 1px;
 
-    background-size: contain; /* especifica o tamanho da imagem */
+     background-attachment: fixed;/* qaudndo rolar a pagina a imagem fica fixa */
+
+    background-size: cover;  /* especifica o tamanho da imagem */ 
 
 
     
 }
 
-p{
-    width: 500px;
+header img {
+    width: 100px;
+}
+
+header{
+    background-color: #68A67E;
+    padding-bottom: 20px;
+    box-shadow:2px 2px 2px 1px #0d0d0d93;
+
+    max-width: 100%;
+    min-width: 20%;
+}
+
+header .container { /* fixaçao do cabeçalho */
+    background-color: #f29544;
+    display: inline-flex;
+    padding: 10px 50px;
+    border-radius: 0px 0px 10px 0px;
+
+    position: absolute;
+
+    left: 0%;
+    top: 0%;
+    text-align: left;
+
+
+    box-shadow: 2px 2px 2px 1px #0d0d0d93; /* faz uma sobra a baixo do cabeçalho */
+
+    position: fixed;
+    z-index: 99;
+    
+}
+
+header .container a {
+    color: #0D0D0D;
+    text-decoration: none;
+
+    font-family: "cookie";
+}
+
+header .container a:hover{
+    color: #68A67E;
+    text-shadow: 2px 2px 2px #0D0D0D;
+}
+
+
+#procure{
+    border-radius: 10px;
+    background-color: #400d015a;
+    border-color: #0D0D0D;
+    
+    
+
+    padding: 2px 14px;
+
+    
+}
+
+form button{
+    position: relative;
+    background-color: #68A67E;
+    border: none;
+    border-radius: 15px;
+
+    padding: 10px;
+    
+    width: 100px;
+
+    color: #0D0D0D;
+    cursor: pointer;
+
     text-align: center;
+
+    transition-duration: 0.2s;
+    overflow: hidden;
+}
+
+form button:hover{
+    background-color: #0d0d0da6;
+    color: #68A67E;
+}
+
+
+
+#procure:focus{ /* decoraçao da borda do area de texto */
+    outline-color: #68A67E;
+    border-color: #68A67E;
+}
+
+.navegacao{ /* deixa o texto na direita da pagina */
+    text-align: right;
+    padding: 10px 50px;
+}
+
+.navegacao li{/* remove a decoração da lista */
+ 
+list-style-type:none ;
+    
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: #0D0D0D;
+    font-size: large;
+    cursor: pointer;
+    
+}
+
+.navegacao ul a:hover{
+    text-decoration:underline;
+    text-decoration-style: wavy;
+    padding: 5px;
+
+}
+
+.navegacao ul a:hover:before{
+    content: url(imagens/frigideira.png);
+
+}
+
+
+
+main{
+    margin: 20px auto;
+    padding: 10px;
+
+    min-width: 300px;
+    max-width:  1000px;/* rsponsividade da página */
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #400d014a;
+
+    background-color: #F2EBDC;
+}
+
+main .video{/* torna o video responsivo */
+    background-color: #400D01;
+    
+    margin: 0px -10px 30px -10px;
+
+   
+    padding-bottom: 45%;
+    position: relative;
+}
+
+main .video > iframe{/* torna o video responsivo */
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.cima{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cima a:hover{
+    opacity: 0.5;
+}
+
+.cima  h2{
+ font-size: 55px;
+ font-family: "cookie";
+}
+
+.container h3{
+    color: #2a4333;
+    font-style: oblique;
+    text-align: center;
+    font-weight: 900;
+
+    padding: 5px;
+}
+
+.container p{
+    text-align: justify;
+    text-indent: 2em;
+    padding: 5px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pratico{
+    min-width: 300px;
+    max-width: 800px;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #400d014a ;
+
     margin: auto;
-    color: whitesmoke;
-    background-color: #0d0d0d7d;
-    border: 10px;
-    padding: 100px;
+
+    padding: 10px 150px;
+
+    text-align: center;
+
+    background-color: #400D01;
+    color: #F2EBDC;
+
+    
+}
+
+.pratico ul{
+    display: inline-flex;
+    justify-content: space-around;
+    
+    padding-top: 5px;
+    height: 100%;
+
+
+}
+
+.pratico li{
+    display: inline;
+    justify-content: space-between;
+    width: 30%;
+    padding: 10px 0;
+    
+    border-style: double ;
+
+}
+
+.pratico h5{
+    padding: 5px;
+}
+
+.pratico img{
+    width: 80%;
+    height: 80%;
+
+    filter: drop-shadow(1px 1px 6px #00000065 );
+
+    border-radius:70%;
+    
+}
+
+.pratico img:hover{
+    opacity: 0.2;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #68A67E;
+    padding: 0;
+    margin-top: 150px;
+
+    text-align: center;
+    font-style: italic;
 }
