@@ -236,7 +236,7 @@ main .video > iframe{/* torna o video responsivo */
 
     margin: auto;
 
-    padding: 10px 150px;
+    padding: 10px;
 
     text-align: center;
 
@@ -271,7 +271,10 @@ main .video > iframe{/* torna o video responsivo */
 }
 
 .pratico img{
-    width: 80%;
+
+    min-width: 30%;
+    max-width:  80%;
+
     height: 80%;
 
     filter: drop-shadow(1px 1px 6px #00000065 );
@@ -304,7 +307,7 @@ footer{
     margin-top: 150px;
 
     min-width: 300px;
-    max-width:  1000px;
+    max-width:  auto;
 
     text-align: center;
     font-style: italic;
