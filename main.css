@@ -140,7 +140,7 @@ list-style-type:none ;
     
 }
 
-.navegacao a{
+.navegacao a{ /* lista do cabeçalho */
     text-decoration: none;
     color: #0D0D0D;
     font-size: large;
@@ -148,7 +148,7 @@ list-style-type:none ;
     
 }
 
-.navegacao ul a:hover{
+.navegacao ul a:hover{/* passar o mouse no cabeçalho */
     text-decoration:underline;
     text-decoration-style: wavy;
     padding: 5px;
@@ -162,7 +162,7 @@ list-style-type:none ;
 
 
 
-main{
+main{ /* reponsividade do conteudo principal */
     margin: 20px auto;
     padding: 10px;
 
@@ -193,22 +193,22 @@ main .video > iframe{/* torna o video responsivo */
     height: 90%;
 }
 
-.cima{
+.cima{/* cabeçalho do conteudo principal */
     display: flex;
     justify-content: center;
     
 }
 
-.cima a:hover{
+.cima a:hover{ /* faz com que a imagen fique com opacidade  */
     opacity: 0.5;
 }
 
-.cima  h2{
+.cima  h2{ /* estilo do cabeçalho da main */
  font-size: 55px;
  font-family: "cookie";
 }
 
-.container h3{
+.container h3{  /* estilo do texto da main */
     color: #2a4333;
     font-style: oblique;
     text-align: center;
@@ -217,7 +217,7 @@ main .video > iframe{/* torna o video responsivo */
     padding: 5px;
 }
 
-.container p{
+.container p{ /* estilo do texto da main */
     text-align: justify;
     text-indent: 2em;
     padding: 5px;
@@ -225,7 +225,21 @@ main .video > iframe{/* torna o video responsivo */
     font-family: 'Times New Roman', Times, serif;
 }
 
-.pratico{
+aside a{ /* estilo do link da main */
+    color: #446c52;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+aside a:hover{ /* estilo do link da main */
+    
+    opacity: 0.5;
+}
+
+.pratico{ /* estilo do bloco de receitas mais buscaddas"rmb" */
     min-width: 300px;
     max-width: 800px;
 
@@ -246,7 +260,7 @@ main .video > iframe{/* torna o video responsivo */
     
 }
 
-.pratico ul{
+.pratico ul{ /* formataçao do conteudo da 'rmb' */
     display: inline-flex;
     justify-content: space-around;
     
@@ -256,7 +270,7 @@ main .video > iframe{/* torna o video responsivo */
 
 }
 
-.pratico li{
+.pratico li{  /* estilo da borda e formataçao do conteudo */
     display: inline;
     justify-content: space-between;
     width: 30%;
@@ -266,11 +280,11 @@ main .video > iframe{/* torna o video responsivo */
 
 }
 
-.pratico h5{
+.pratico h5{ /* correçao da altura do h5 */
     padding: 5px;
 }
 
-.pratico img{
+.pratico img{/*  formataçao da imgen do rmb*/
 
     min-width: 30%;
     max-width:  80%;
@@ -283,8 +297,9 @@ main .video > iframe{/* torna o video responsivo */
     
 }
 
-.pratico img:hover{
+.pratico img:hover{ /* opacidade da imagem se tocada */
     opacity: 0.2;
+    
    
 }
 
@@ -301,9 +316,9 @@ main .video > iframe{/* torna o video responsivo */
 
 
 
-footer{
+footer{ /* formataçao do rodape, cor e tamanho */
     background-color: #68A67E;
-    padding: 0;
+    padding: 2px;
     margin-top: 150px;
 
     min-width: 300px;
@@ -311,4 +326,22 @@ footer{
 
     text-align: center;
     font-style: italic;
+
+    font-size: 13px;
+}
+
+footer a{ /* cor do link e retirada da linha */
+    color: #D96725;
+    font-weight: bolder;
+    text-decoration: none;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+footer a:hover{/* adiçao da linha com formato de onda no link ao ser tocado */
+    
+    text-decoration: underline;
+    text-decoration-style:wavy ;
+    
 }
