@@ -1,6 +1,12 @@
 @font-face {
     font-family: "cookie" ;
     src: url(fontes/Cookiss.otf);
+
+}
+
+@font-face{
+    font-family: "word";
+    src: url(fontes/Blacksword.otf);
 }
 
 :root{/*padroes fixos*/
@@ -11,6 +17,9 @@
     --cor5:#0D0D0D;
     --cor5:#F2EBDC;
 
+    --h:"cookie" ;
+
+    --shadow: 1px 1px 3px 1px #400d014a;;
 }
 
 *{
@@ -307,6 +316,117 @@ aside a:hover{ /* estilo do link da main */
 
 
 
+.novo {        /* faz a parte do doces a alegar */    
+    margin: auto;
+    padding: 20px;
+    
+    margin-top: 15px;
+
+    min-width: 300px;
+    max-width: 1000px;
+
+    border-radius: 5px;
+
+    background-color: #F2EBDC;
+    box-shadow: var(--shadow);
+
+
+}
+
+.novo h4{ /* responsavel pelo titulo */
+    text-align: center;
+    font-family: var(--h);
+
+    color: #2a4333;
+    font-size: large;
+    font-weight: 100;
+    
+}
+
+.novo h5{ /* responsavel pela subtitulo */
+    font-family: "word";
+    font-size: large;
+    font-weight: 100;
+}
+
+
+.novo aside{ /* da um epaçamento nas polaroids */
+    padding: 15px;
+}
+
+
+#centro{ /* configura oo display da polaroid */
+    display: inline-flex;
+    padding: 5px;
+
+
+    border-radius: 5px;
+    
+    
+}
+
+.polaroid{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.texto{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+.peixe h2{ /* ambientação da favorita */
+    text-align: left;
+    padding: 15px;
+
+    margin: auto;
+
+    min-width: 300px;
+    max-width: 1000px;
+
+    font-family: var(--h);
+    font-weight: 100;
+
+}
+
+.heardeimg  {
+
+    margin: auto;
+
+    min-width: 300px;
+    max-width: 1000px;
+
+   height: 300px;
+    display: flex;
+
+   
+}
+
+
+#ladoa img{
+    height: 100%;
+    width: 500px;
+    padding-right:25px;
+
+    border-radius: 5px 5px 5px 5px ;
+    
+}
+
+#ladob{
+    background-color: #2a4333;
+    padding: 25px;
+
+    border:;
+
+    border: 50px;
+
+    padding-right: 300px;
+
+    border-radius: 0  5px 5px 0;
+}
 
 
 
