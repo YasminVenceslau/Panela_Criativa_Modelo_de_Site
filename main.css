@@ -27,7 +27,7 @@
     padding: 0;
 }
 
-body{
+body{ /* imagem de fundo */
     height: 100vh;
     margin: auto;
 
@@ -77,8 +77,7 @@ header .container { /* fixaçao do cabeçalho */
 
     box-shadow: 2px 2px 2px 1px #0d0d0d93; /* faz uma sobra a baixo do cabeçalho */
 
-    position: fixed;
-    z-index: 99;
+    
     
 }
 
@@ -107,7 +106,8 @@ header .container a:hover{
     
 }
 
-form button{
+form button,
+#ladob button{
     position: relative;
     background-color: #68A67E;
     border: none;
@@ -115,6 +115,7 @@ form button{
 
     padding: 10px;
     
+    margin: 15px;
     width: 100px;
 
     color: #0D0D0D;
@@ -126,7 +127,8 @@ form button{
     overflow: hidden;
 }
 
-form button:hover{
+form button:hover,
+#ladob button:hover{
     background-color: #0d0d0da6;
     color: #68A67E;
 }
@@ -283,7 +285,7 @@ aside a:hover{ /* estilo do link da main */
     display: inline;
     justify-content: space-between;
     width: 30%;
-    padding: 10px 0;
+    padding: 25px 0;
     
     border-style: double ;
 
@@ -333,13 +335,16 @@ aside a:hover{ /* estilo do link da main */
 
 }
 
-.novo h4{ /* responsavel pelo titulo */
+.novo h4,
+.peixe h2{ /* responsavel pelo titulo */
     text-align: center;
     font-family: var(--h);
 
     color: #2a4333;
-    font-size: large;
+    font-size: 40px;
     font-weight: 100;
+
+
     
 }
 
@@ -399,40 +404,82 @@ aside a:hover{ /* estilo do link da main */
     min-width: 300px;
     max-width: 1000px;
 
-   height: 300px;
+    height: 300px;
     display: flex;
+    
 
-   
 }
 
 
 #ladoa img{
-    height: 100%;
-    width: 500px;
-    padding-right:25px;
+    min-width: 10%;
+    max-height: 100%;
+    
+   margin: auto;
 
-    border-radius: 5px 5px 5px 5px ;
+
+    border-radius: 5px  ;
+
+    box-shadow: var(--shadow);
     
 }
 
 #ladob{
-    background-color: #2a4333;
-    padding: 25px;
-
-    border:;
-
-    border: 50px;
-
-    padding-right: 300px;
-
-    border-radius: 0  5px 5px 0;
+    background-color: #F2EBDC;
+    
+    box-shadow: var(--shadow);
+    border-radius: 5px;
 }
 
 
+.peixe h2{
+    text-align: center;
+    
+    padding-top: 30px;
+    padding-bottom: 5px;
+
+    font-size: 3em;
+    font-weight: 100;
 
 
+}
 
+ .heardeimg aside{
+    margin: auto;
 
+    min-width: 30%;
+    max-width: 100%;
+
+    height: 250px;
+}
+
+#ladob h3{
+    padding: 15px;
+    color: var(--cor2);
+
+    font-size: 40px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#ladob p{
+    padding: 0px 15px 15px;
+    text-align: justify;
+
+    color: #0f1511;
+}
+
+.peixe{
+    background-color: #400D01;
+    
+    box-shadow: var(--shadow);
+    margin: 15px  auto;
+
+    max-width: 1000px;
+    min-width: 300px;
+
+    border-radius: 5px;
+}
 
 
 
