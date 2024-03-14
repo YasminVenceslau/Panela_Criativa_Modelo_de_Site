@@ -2,6 +2,13 @@
 
  - Modelo de site para o projeto Módulo 5 - Projeto  Full Stack Python.
 
+ ## [0.0.5] - 14/03/2024
+ 
+ ### Adição
+
+ - Finalizção do Site
+ 
+
  ## [0.0.4] - 13/03/2024
 
  ### Correção

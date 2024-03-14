@@ -140,18 +140,21 @@ form button:hover,
     border-color: #68A67E;
 }
 
-.navegacao{ /* deixa o texto na direita da pagina */
+.navegacao,
+.nav2{ /* deixa o texto na direita da pagina */
     text-align: right;
     padding: 10px 50px;
 }
 
-.navegacao li{/* remove a decoração da lista */
+.navegacao li,
+.nav2 li{/* remove a decoração da lista */
  
 list-style-type:none ;
     
 }
 
-.navegacao a{ /* lista do cabeçalho */
+.navegacao a,
+.nav2 a{ /* lista do cabeçalho */
     text-decoration: none;
     color: #0D0D0D;
     font-size: large;
@@ -159,14 +162,16 @@ list-style-type:none ;
     
 }
 
-.navegacao ul a:hover{/* passar o mouse no cabeçalho */
+.navegacao ul a:hover,
+.nav2 ul a:hover{/* passar o mouse no cabeçalho */
     text-decoration:underline;
     text-decoration-style: wavy;
     padding: 5px;
 
 }
 
-.navegacao ul a:hover:before{
+.navegacao ul a:hover:before,
+.nav2 ul a:hover:before{
     content: url(imagens/frigideira.png);
 
 }
@@ -210,13 +215,15 @@ main .video > iframe{/* torna o video responsivo */
     
 }
 
-.cima a:hover{ /* faz com que a imagen fique com opacidade  */
+.cima a:hover,
+.pe section a:hover{ /* faz com que a imagen fique com opacidade  */
     opacity: 0.5;
 }
 
 .cima  h2{ /* estilo do cabeçalho da main */
  font-size: 55px;
  font-family: "cookie";
+ color: #68A67E;
 }
 
 .container h3{  /* estilo do texto da main */
@@ -340,7 +347,7 @@ aside a:hover{ /* estilo do link da main */
     text-align: center;
     font-family: var(--h);
 
-    color: #2a4333;
+    color: #5e8b6e;
     font-size: 40px;
     font-weight: 100;
 
@@ -481,12 +488,88 @@ aside a:hover{ /* estilo do link da main */
     border-radius: 5px;
 }
 
+.pe { /* responsividad no footer */
+
+    min-width: 300px;
+    max-width: 2000px;
+    margin: auto;
+
+    text-align: center;
+    margin-top: 30px;
+
+background-image: linear-gradient(#2a4333,#68A67E);
+
+}
+
+.pe section img{
+    
+    max-width: 10%;
+    padding: 50px;
+    
+    
+
+}
+
+.pe section{
+    display: inline-flex;
+    padding: 10px;
+
+
+}
+
+.top{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: initial;
+    padding-left: 15px;
+}
+
+.nav2{
+    padding-top: 15px;
+    padding-right: 50px;
+
+    
+}
+.nav2 h3{
+    font-family: var(--h);
+    color: #F2EBDC;
+    font-weight: 100;
+
+}
+
+.pe hr.barra{
+    border: 1px solid var(--cor3);
+    
+}
+
+.social{
+    text-align: center;
+}
+
+.social h3{
+    padding: 15px;
+
+    
+    font-family: var(--h);
+    font-weight: 100;
+    color: #F2EBDC;
+}
+
+.social a img{
+    
+    max-width: 25%;
+    padding: 15px;
+}
+
+
+
 
 
 footer{ /* formataçao do rodape, cor e tamanho */
-    background-color: #68A67E;
+    background-color: #0f1511;
+    color: #F2EBDC;
     padding: 2px;
-    margin-top: 150px;
+    
 
     min-width: 300px;
     max-width:  auto;
